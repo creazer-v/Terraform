@@ -23,7 +23,7 @@ default = ""
 
 variable "secret" {
 type = string
-default = "
+default = ""
 }
 
 variable "regions"{
