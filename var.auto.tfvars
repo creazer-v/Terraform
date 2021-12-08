@@ -1,1 +1,1 @@
-region = ap-southeast-1
+AWS_DEFAULT_REGION = "ap-southeast-1"
