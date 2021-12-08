@@ -16,6 +16,16 @@ provider "aws" {
   region = var.regions
 }
 
+variable "access" {
+type = string
+default = ""
+}
+
+variable "secret" {
+type = string
+default = "
+}
+
 variable "regions"{
   type = string
   default = "ap-southeast-2"
