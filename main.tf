@@ -16,6 +16,7 @@ provider "aws" {
 
 variable "regions"{
   type = string
+  default = "ap-southeast-2"
 }
 
 resource "aws_vpc" "ProdVpc" {
