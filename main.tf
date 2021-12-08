@@ -11,7 +11,11 @@ terraform {
 
 
 provider "aws" {
-  region = "ap-southeast-2"
+  region = var.regions
+}
+
+variable "regions"{
+  type = string
 }
 
 resource "aws_vpc" "ProdVpc" {
