@@ -258,7 +258,7 @@ module "s3-bucket-rds" {
 ##			                                          KMS Provisioner                                                               
 #####################################################################################################################################
 module "kms_service_rds" {
-  source  = "cps-terraform.anthem.com/<ORGANIZATION-NAME>/terraform-aws-kms-service/aws"
+  source  = "cps-terraform.anthem.com/CORP/terraform-aws-kms-service/aws"
   version = "0.2.8"
 
   description    = "KMS for RDS"
@@ -305,7 +305,7 @@ module "cname-record-rds" {
 #####################################################################################################################################
 module "terraform-aws-ec2" {
   depends_on = [module.pgsql]
-  source     = "cps-terraform.anthem.com/<ORGANIZATION-NAME>/terraform-aws-ec2/aws"
+  source     = "cps-terraform.anthem.com/CORP/terraform-aws-ec2/aws"
   version    = "0.4.5"
 
   delete_on_termination                = true
