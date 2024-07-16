@@ -91,7 +91,7 @@ data "vault_generic_secret" "tfe_creds" {
 ##			                                          PGSQL Database Provisioner                                                         
 #####################################################################################################################################
 module "pgsql" {
-  source  = "cps-terraform.anthem.com/<CORP/terraform-aws-postgresql/aws"
+  source  = "cps-terraform.anthem.com/CORP/terraform-aws-postgresql/aws"
   version = "0.2.2"
 
   /* Data Platform Technical Tags */
