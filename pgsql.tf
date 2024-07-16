@@ -97,7 +97,8 @@ module "pgsql" {
   /* Data Platform Technical Tags */
   application-name       = var.application-name
   bcp-tier               = "Tier-84"
-  created-by             = module.created-by.name
+ # created-by             = module.created-by.name
+ created-by             = "ag94849"
   database-platform      = "PgSql"
   database-state         = "Active"
   db-patch-schedule      = "M00W0"
@@ -200,12 +201,12 @@ module "pgsql" {
 #####################################################################################################################################
 ##			                                          CreatedBy Provisioner                                                               
 #####################################################################################################################################
-module "created-by" {
-  source = "cps-terraform.anthem.com/CORP/terraform-aws-createdby/aws"
-  version    = "0.0.2"
+# module "created-by" {
+#   source = "cps-terraform.anthem.com/CORP/terraform-aws-createdby/aws"
+#   version    = "0.0.2"
 
-  business-division = var.business-division
-}
+#   business-division = var.business-division
+# }
 
 #####################################################################################################################################
 ##			                                          S3 Bucket Provisioner                                                               
