@@ -202,6 +202,7 @@ module "pgsql" {
 #####################################################################################################################################
 module "created-by" {
   source = "cps-terraform.anthem.com/CORP/terraform-aws-createdby/aws"
+  version    = "0.0.2"
 
   business-division = var.business-division
 }
