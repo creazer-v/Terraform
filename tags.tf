@@ -1,6 +1,6 @@
 module "mandatory_tags" {
   source  = "cps-terraform.anthem.com/CORP/terraform-aws-mandatory-tags-v2/aws"
-  version = "0.0.1"
+  version = "0.0.2"
 
   tags = {
     "ci-owner"  = var.ci-owner
