@@ -33,6 +33,7 @@ module "mandatory_tags" {
   elvh-workspace            = var.ATLAS_WORKSPACE_NAME
 }
 
+
 module "mandatory_data_tags" {
   source                    = "cps-terraform.anthem.com/CORP/terraform-aws-mandatory-data-tags-v2/aws"
   tags                      = {}
