@@ -1,7 +1,7 @@
 terraform {
   backend "remote" {
     hostname     = "cps-terraform.anthem.com"
-    organization = "CORP"
+    organization = "corp"
     workspaces {
       name = "scapp1-prod"
     }
