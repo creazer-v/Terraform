@@ -35,7 +35,7 @@ data "http" "workspaces_details" {
   request_headers = local.headers
 }
 data "http" "configuration_version" {
-  url = "https://${local.hostname}${jsondecode(data.http.run_details.body).data.relationships.configuration-version.links.related}"
+  url = "https://${local.hostname}${jsondecode(data.http.run_details.response_body).data.relationships.configuration-version.links.related}"
  
   request_headers = local.headers
 }
