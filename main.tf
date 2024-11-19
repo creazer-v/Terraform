@@ -39,9 +39,6 @@ data "http" "configuration_version" {
  
   request_headers = local.headers
 }
-output "configuration_version" {
-  value = jsondecode(data.http.run_details.body)
-}
 # Fetch ingress attributes using the configuration version ID
 data "http" "ingress_attributes" {
   url             = "https://${local.hostname}${jsondecode(data.http.configuration_version.body).data.relationships.ingress-attributes.links.related}"
