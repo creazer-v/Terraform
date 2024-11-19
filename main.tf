@@ -41,7 +41,7 @@ data "http" "configuration_version" {
 }
 # Fetch ingress attributes using the configuration version ID
 data "http" "ingress_attributes" {
-  url             = "https://${local.hostname}${jsondecode(data.http.configuration_version.body).data.relationships.ingress-attributes.links.related}"
+  url             = "https://${local.hostname}${jsondecode(data.http.configuration_version.response_body).data.relationships.ingress-attributes.links.related}"
   request_headers = local.headers
 }
 # Get User ID info from the specific Run Details 
