@@ -14,6 +14,6 @@ module "created-by" {
   business-division = var.business-division
 }
 
-outputs "name" {
+output "name" {
 value = module.created-by.username
 }
