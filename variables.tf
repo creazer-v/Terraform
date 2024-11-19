@@ -10,10 +10,6 @@ variable "workspace_hostname" {
   default = "cps-terraform.anthem.com"
 }
 
-variable "business-division" {
-  type = string
-}
-
 variable "path-prefix" {
   type = string
   default = "corp-dlvrsermgt/secret/tfe/prod/"
