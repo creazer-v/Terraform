@@ -21,7 +21,7 @@ locals {
   }
   run_details  = jsondecode(data.http.workspaces_details.response_body)["data"]["relationships"]["latest-run"]["data"]["id"]
   user_details = try(jsondecode(data.http.run_details.response_body)["data"]["relationships"]["created-by"]["data"]["id"],jsondecode(data.http.run_details.response_body)["data"]["relationships"]["confirmed-by"]["data"]["id"], "Automated")
-  username     = try(jsondecode(data.http.user_details.response_body)["data"]["attributes"]["username"], jsondecode(data.http.ingress_attributes.response_body).data.attributes["sender-username"], "Automated")
+  username     = replace(lower(try(jsondecode(data.http.user_details.response_body)["data"]["attributes"]["username"], jsondecode(data.http.ingress_attributes.response_body).data.attributes["sender-username"], "Automated")), "/[^a-z0-9]+/", "_")
 }
 
 # Read Token
