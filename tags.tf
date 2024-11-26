@@ -33,14 +33,14 @@ module "mandatory_tags" {
   elvh-workspace            = var.ATLAS_WORKSPACE_NAME
 }
 
-module "mandatory_data_tags" {
-  source                    = "cps-terraform.anthem.com/corp/terraform-aws-mandatory-data-tags-v2/aws"
-  tags                      = {}
-  financial-internal-data   = var.financial-internal-data
-  financial-regulatory-data = var.financial-regulatory-data
-  legal-data                = var.legal-data
-  privacy-data              = var.privacy-data
-}
+# module "mandatory_data_tags" {
+#   source                    = "cps-terraform.anthem.com/corp/terraform-aws-mandatory-data-tags-v2/aws"
+#   tags                      = {}
+#   financial-internal-data   = var.financial-internal-data
+#   financial-regulatory-data = var.financial-regulatory-data
+#   legal-data                = var.legal-data
+#   privacy-data              = var.privacy-data
+# }
 
 /***** Workspace variables ****/
 variable "app-servicenow-group" {}
