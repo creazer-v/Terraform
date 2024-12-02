@@ -35,3 +35,5 @@ provider "aws" {
   secret_key = data.vault_aws_access_credentials.creds.secret_key
   token      = data.vault_aws_access_credentials.creds.security_token
 }
+
+########################## hello world ##########################################
