@@ -1,7 +1,7 @@
 name: Fetch AWS Provider Changes
 on:
   schedule:
-    - cron: '0 0 * * *'  # Fixed the cron syntax (was '0 0 * **')
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
@@ -19,7 +19,7 @@ jobs:
       - name: Check if changes exist
         id: check_changes
         run: |
-          if [ -s changes.md ]; then
+          if [ -s changes.md ] && [ -n "$(git status --porcelain changes.md)" ]; then
             echo "changes_exist=true" >> $GITHUB_OUTPUT
           else
             echo "changes_exist=false" >> $GITHUB_OUTPUT
@@ -32,7 +32,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add changes.md
           git commit -m "Update changes.md with filtered changelog entries"
-          git push
+          git push || echo "No changes to commit"
 
       - name: Create issue if changes exist
         if: steps.check_changes.outputs.changes_exist == 'true'
