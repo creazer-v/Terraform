@@ -14,7 +14,50 @@ jobs:
       - name: Fetch and filter changelog
         run: |
           curl -s https://raw.githubusercontent.com/hashicorp/terraform-provider-aws/refs/heads/main/CHANGELOG.md | \
-          grep -iE 'rds|dynamodb|docdb|[^a-zA-Z]db[^a-zA-Z]|redshift|aurora|enhancement|feature|bug fixes' > changes.md
+          awk '
+          BEGIN {
+            printing = 0
+            section = ""
+          }
+          /^## [0-9]+\.[0-9]+\.[0-9]+/ {
+            print "\n" $0 "\n"
+            printing = 1
+            next
+          }
+          /^FEATURES:/ {
+            if (printing) {
+              print "\nFEATURES:"
+              section = "FEATURES"
+            }
+            next
+          }
+          /^ENHANCEMENTS:/ {
+            if (printing) {
+              print "\nENHANCEMENTS:"
+              section = "ENHANCEMENTS"
+            }
+            next
+          }
+          /^BUG FIXES:/ {
+            if (printing) {
+              print "\nBUG FIXES:"
+              section = "BUG FIXES"
+            }
+            next
+          }
+          /^NOTES:/ {
+            if (printing) {
+              print "\nNOTES:"
+              section = "NOTES"
+            }
+            next
+          }
+          /rds|dynamodb|docdb|[^a-zA-Z]db[^a-zA-Z]|redshift|aurora/ {
+            if (printing && section != "") {
+              print $0
+            }
+          }
+          ' > changes.md
 
       - name: Check if changes exist
         id: check_changes
