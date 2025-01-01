@@ -17,7 +17,7 @@ if [ "$environment" != "production" ]; then
        echo "Reading Infrastructure credentials from KV Mount - $KVMOUNT"
        password=$(vault kv get -field=password corp-antmdb/aws-mysql-nonprod/db-infra-service-accounts.anthem.com/$db/)
        echo "Reading Password for $username from vault"
-       mysql -h ${Hostname} -P3306 --ssl-ca=global-bundle.pem -u antmsysdba -p$MySQLPWD -e "alter user '$username'@'%' identified by '$password'" 2>&1 | tee mysql-sql.log
+       mysql -h ${Hostname} -P3306 --ssl-ca=global-bundle.pem -u antmsysdb -p$MySQLPWD -e "alter user '$username'@'%' identified by '$password'" 2>&1 | tee mysql-sql.log
        sql_cmd=${PIPESTATUS[0]}
        sql_err=$(grep -i ERR mysql-sql.log || echo "")
        if [[ $sql_cmd -eq 0 && -z $sql_err ]]; then
