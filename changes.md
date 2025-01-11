@@ -2,6 +2,15 @@
 ## 5.84.0 (Unreleased)
 
 
+FEATURES:
+
+BUG FIXES:
+
+## 5.83.1 (January 10, 2025)
+
+
+BUG FIXES:
+
 ## 5.83.0 (January  9, 2025)
 
 
