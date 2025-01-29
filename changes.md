@@ -2,7 +2,10 @@
 ## 5.85.0 (Unreleased)
 
 
+FEATURES:
+
 ENHANCEMENTS:
+* resource/aws_rds_cluster: Support `instance` as a valid value for `enabled_cloudwatch_logs_exports` ([#41111](https://github.com/hashicorp/terraform-provider-aws/issues/41111))
 
 BUG FIXES:
 
