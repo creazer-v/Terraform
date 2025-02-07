@@ -1,8 +1,15 @@
 
-## 5.86.0 (Unreleased)
+## 5.87.0 (Unreleased)
 
+
+## 5.86.0 (February  6, 2025)
+
+
+NOTES:
 
 ENHANCEMENTS:
+* data-source/aws_rds_cluster: Add `monitoring_interval` and `monitoring_role_arn` attributes ([#41002](https://github.com/hashicorp/terraform-provider-aws/issues/41002))
+* resource/aws_rds_cluster: Add `monitoring_interval` and `monitoring_role_arn` arguments ([#41002](https://github.com/hashicorp/terraform-provider-aws/issues/41002))
 
 BUG FIXES:
 
