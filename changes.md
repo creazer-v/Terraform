@@ -7,6 +7,7 @@ ENHANCEMENTS:
 * resource/aws_rds_cluster: Add `master_password_wo` write-only attribute ([#41314](https://github.com/hashicorp/terraform-provider-aws/issues/41314))
 
 BUG FIXES:
+* data-source/aws_dynamodb_table: Add missing `on_demand_throughput` and `global_secondary_index.*.on_demand_throughput` attributes to resolve read error ([#41350](https://github.com/hashicorp/terraform-provider-aws/issues/41350))
 
 ## 5.86.1 (February 11, 2025)
 
