@@ -1,6 +1,11 @@
 
-## 5.87.0 (Unreleased)
+## 5.88.0 (Unreleased)
 
+
+## 5.87.0 (February 13, 2025)
+
+
+FEATURES:
 
 ENHANCEMENTS:
 * resource/aws_dynamodb_table_export: Add `export_type` and `incremental_export_specification` arguments ([#41303](https://github.com/hashicorp/terraform-provider-aws/issues/41303))
