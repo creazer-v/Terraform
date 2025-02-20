@@ -6,8 +6,12 @@ FEATURES:
 
 ENHANCEMENTS:
 * resource/aws_db_instance: Add `password_wo` write-only attribute ([#41366](https://github.com/hashicorp/terraform-provider-aws/issues/41366))
+* resource/aws_docdb_cluster: Add `master_password_wo` write-only attribute ([#41413](https://github.com/hashicorp/terraform-provider-aws/issues/41413))
+* resource/aws_redshift_cluster: Add `master_password_wo` write-only attribute ([#41411](https://github.com/hashicorp/terraform-provider-aws/issues/41411))
+* resource/aws_redshiftserverless_namespace: Add `admin_user_password_wo` write-only attribute ([#41412](https://github.com/hashicorp/terraform-provider-aws/issues/41412))
 
 BUG FIXES:
+* resource/aws_dynamodb_table: Fixes long delay in creation of replicas ([#41451](https://github.com/hashicorp/terraform-provider-aws/issues/41451))
 
 ## 5.87.0 (February 13, 2025)
 
