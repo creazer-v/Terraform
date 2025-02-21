@@ -1,6 +1,14 @@
 
-## 5.88.0 (Unreleased)
+## 5.89.0 (Unreleased)
 
+
+ENHANCEMENTS:
+* resource/aws_rds_instance: Support `iam-db-auth-error` as a valid value for `enabled_cloudwatch_logs_exports` ([#41408](https://github.com/hashicorp/terraform-provider-aws/issues/41408))
+
+## 5.88.0 (February 20, 2025)
+
+
+NOTES:
 
 FEATURES:
 
