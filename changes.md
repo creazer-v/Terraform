@@ -2,6 +2,9 @@
 ## 5.90.0 (Unreleased)
 
 
+NOTES:
+* resource/aws_opsworks_rds_db_instance: OpsWorks is no longer supported by AWS. This resource is deprecated and will be removed in the next major version. ([#41674](https://github.com/hashicorp/terraform-provider-aws/issues/41674))
+
 FEATURES:
 
 ENHANCEMENTS:
