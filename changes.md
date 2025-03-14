@@ -1,12 +1,17 @@
 
-## 5.91.0 (Unreleased)
+## 5.92.0 (Unreleased)
+
+
+## 5.91.0 (March 13, 2025)
 
 
 NOTES:
 
 FEATURES:
+* **New Resource:** `aws_route53_records_exclusive` ([#41741](https://github.com/hashicorp/terraform-provider-aws/issues/41741))
 
 ENHANCEMENTS:
+* resource/aws_timestreaminfluxdb_db_instance: Add `network_type` and `port` attributes. The following can now be updated in place: `allocated_storage`, `db_instance_type`, `db_storage_type` and `deployment_type` ([#40661](https://github.com/hashicorp/terraform-provider-aws/issues/40661))
 
 BUG FIXES:
 
