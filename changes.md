@@ -5,6 +5,7 @@
 ENHANCEMENTS:
 
 BUG FIXES:
+* resource/aws_db_instance: Fix `InvalidParameterCombination: To enable the Advanced mode of Database Insights, modify your cluster to enable Performance Insights and set the retention period for Performance Insights to at least 465 days` errors when enabling `database_insights_mode` on existing instances ([#41960](https://github.com/hashicorp/terraform-provider-aws/issues/41960))
 
 ## 5.92.0 (March 20, 2025)
 
