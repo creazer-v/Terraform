@@ -1,10 +1,15 @@
 
-## 5.93.0 (Unreleased)
+## 5.94.0 (Unreleased)
+
+
+## 5.93.0 (March 27, 2025)
 
 
 FEATURES:
 
 ENHANCEMENTS:
+* resource/aws_verified_access_endpoint: Add `cidr_options`, `load_balancer.port_range`, `network_interface_options.port_range`, and `rds_options` arguments ([#41957](https://github.com/hashicorp/terraform-provider-aws/issues/41957))
+* resource/aws_verified_access_endpoint: Support `cidr` and `rds` as valid values for `endpoint_type` ([#41957](https://github.com/hashicorp/terraform-provider-aws/issues/41957))
 
 BUG FIXES:
 * resource/aws_db_instance: Fix `InvalidParameterCombination: To enable the Advanced mode of Database Insights, modify your cluster to enable Performance Insights and set the retention period for Performance Insights to at least 465 days` errors when enabling `database_insights_mode` on existing instances ([#41960](https://github.com/hashicorp/terraform-provider-aws/issues/41960))
