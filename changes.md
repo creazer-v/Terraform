@@ -2,6 +2,9 @@
 ## 5.95.0 (Unreleased)
 
 
+FEATURES:
+* **New Resource:** `aws_redshift_integration` ([#42105](https://github.com/hashicorp/terraform-provider-aws/issues/42105))
+
 ENHANCEMENTS:
 
 BUG FIXES:
