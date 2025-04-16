@@ -2,10 +2,13 @@
 ## 5.95.0 (Unreleased)
 
 
+NOTES:
+
 FEATURES:
 * **New Resource:** `aws_redshift_integration` ([#42105](https://github.com/hashicorp/terraform-provider-aws/issues/42105))
 
 ENHANCEMENTS:
+* resource/aws_redshiftserverless_workgroup: Add `price_performance_target` argument ([#40946](https://github.com/hashicorp/terraform-provider-aws/issues/40946))
 
 BUG FIXES:
 
