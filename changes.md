@@ -1,5 +1,8 @@
 
-## 5.95.0 (Unreleased)
+## 5.96.0 (Unreleased)
+
+
+## 5.95.0 (April 17, 2025)
 
 
 NOTES:
