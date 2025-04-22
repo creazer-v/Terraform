@@ -2,6 +2,11 @@
 ## 5.96.0 (Unreleased)
 
 
+FEATURES:
+
+ENHANCEMENTS:
+* resource/aws_rds_cluster: Fix `InvalidParameterValue: SecondsUntilAutoPause can only be specified when minimum capacity is 0` errors when removing `serverlessv2_scaling_configuration.seconds_until_auto_pause` ([#41180](https://github.com/hashicorp/terraform-provider-aws/issues/41180))
+
 ## 5.95.0 (April 17, 2025)
 
 
