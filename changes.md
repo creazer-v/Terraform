@@ -6,6 +6,8 @@ FEATURES:
 
 ENHANCEMENTS:
 
+BUG FIXES:
+
 ## 5.96.0 (April 24, 2025)
 
 
