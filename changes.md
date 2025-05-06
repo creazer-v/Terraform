@@ -2,6 +2,13 @@
 ## 5.98.0 (Unreleased)
 
 
+FEATURES:
+* **New Data Source:** `aws_dynamodb_tables` ([#42339](https://github.com/hashicorp/terraform-provider-aws/issues/42339))
+
+ENHANCEMENTS:
+
+BUG FIXES:
+
 ## 5.97.0 (May  1, 2025)
 
 
