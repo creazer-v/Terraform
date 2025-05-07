@@ -6,6 +6,8 @@ FEATURES:
 * **New Data Source:** `aws_dynamodb_tables` ([#42339](https://github.com/hashicorp/terraform-provider-aws/issues/42339))
 
 ENHANCEMENTS:
+* data-source/aws_redshiftserverless_workgroup: Add `track_name` attribute ([#42451](https://github.com/hashicorp/terraform-provider-aws/issues/42451))
+* resource/aws_redshiftserverless_workgroup: Add `track_name` argument ([#42451](https://github.com/hashicorp/terraform-provider-aws/issues/42451))
 
 BUG FIXES:
 
