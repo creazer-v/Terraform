@@ -8,10 +8,12 @@ FEATURES:
 ENHANCEMENTS:
 * data-source/aws_dynamodb_table: Add `point_in_time_recovery.recovery_period_in_days` attribute ([#41484](https://github.com/hashicorp/terraform-provider-aws/issues/41484))
 * data-source/aws_redshiftserverless_workgroup: Add `track_name` attribute ([#42451](https://github.com/hashicorp/terraform-provider-aws/issues/42451))
+* resource/aws_docdb_cluster: Add `manage_master_user_password` argument and `master_user_secret` attribute ([#42563](https://github.com/hashicorp/terraform-provider-aws/issues/42563))
 * resource/aws_dynamodb_table: Add `point_in_time_recovery.recovery_period_in_days` argument ([#41484](https://github.com/hashicorp/terraform-provider-aws/issues/41484))
 * resource/aws_redshiftserverless_workgroup: Add `track_name` argument ([#42451](https://github.com/hashicorp/terraform-provider-aws/issues/42451))
 
 BUG FIXES:
+* resource/aws_rds_cluster_parameter_group: Fix `InvalidParameterValue: collation_server '..' is not valid for character_set '...'` errors on Create ([#42559](https://github.com/hashicorp/terraform-provider-aws/issues/42559))
 
 ## 5.97.0 (May  1, 2025)
 
