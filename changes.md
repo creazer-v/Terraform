@@ -1,10 +1,12 @@
 
 ## 5.99.0 (Unreleased)
-https://prod.liveshare.vsengsaas.visualstudio.com/join?8B90E675D9F1042156886B8A4A1E9F9BF016
+
 
 FEATURES:
 
-ENHANCEMENTS:opiu
+ENHANCEMENTS:
+* resource/aws_securityhub_standards_subscription: Add configurable Create and Delete timeouts ([#42759](https://github.com/hashicorp/terraform-provider-aws/issues/42759))
+
 BUG FIXES:
 
 ## 5.98.0 (May 15, 2025)
