@@ -1,16 +1,4 @@
 
-## 5.100.0 (Unreleased)
-
-
-NOTES:
-
-FEATURES:
-
-ENHANCEMENTS:
-
-BUG FIXES:
-* resource/aws_dynamodb_table: Set new computed value for `stream_arn` attribute when changing `stream_view_type` ([#42561](https://github.com/hashicorp/terraform-provider-aws/issues/42561))
-
 ## 5.99.1 (May 30, 2025)
 
 
