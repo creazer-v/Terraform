@@ -2,6 +2,8 @@
 ## 6.3.0 (Unreleased)
 
 
+BUG FIXES:
+
 ## 6.2.0 (July  2, 2025)
 
 
@@ -11,10 +13,6 @@ BUG FIXES:
 
 ## 6.1.0 (June 26, 2025)
 
-
-ENHANCEMENTS:
-
-BUG FIXES:
 
 ## 6.0.0 (June 18, 2025)
 
