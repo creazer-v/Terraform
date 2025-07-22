@@ -2,6 +2,8 @@
 ## 6.5.0 (Unreleased)
 
 
+FEATURES:
+
 ## 6.4.0 (July 17, 2025)
 
 
@@ -26,6 +28,8 @@ BUG FIXES:
 
 ## 6.2.0 (July  2, 2025)
 
+
+NOTES:
 
 ENHANCEMENTS:
 
