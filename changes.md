@@ -5,8 +5,10 @@
 FEATURES:
 
 ENHANCEMENTS:
+* resource/aws_docdb_cluster: Add `serverless_v2_scaling_configuration` argument in support of [Amazon DocumentDB serverless](https://docs.aws.amazon.com/documentdb/latest/developerguide/docdb-serverless.html) ([#43667](https://github.com/hashicorp/terraform-provider-aws/issues/43667))
 
 BUG FIXES:
+* resource/aws_timestreaminfluxdb_db_instance: Don't mark `network_type` as [ForceNew](https://developer.hashicorp.com/terraform/plugin/sdkv2/schemas/schema-behaviors#forcenew) if the value is not configured. This fixes a problem with `terraform apply -refresh=false` after upgrade from `v5.90.0` and below ([#43534](https://github.com/hashicorp/terraform-provider-aws/issues/43534))
 
 ## 6.7.0 (July 31, 2025)
 
