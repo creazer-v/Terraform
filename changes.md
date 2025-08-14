@@ -2,6 +2,8 @@
 ## 6.9.0 (Unreleased)
 
 
+FEATURES:
+
 ENHANCEMENTS:
 * resource/aws_dynamodb_table: Add `replica.deletion_protection_enabled` argument ([#43240](https://github.com/hashicorp/terraform-provider-aws/issues/43240))
 
