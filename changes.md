@@ -4,6 +4,10 @@
 
 ENHANCEMENTS:
 
+BUG FIXES:
+* resource/aws_rds_cluster: Fixes the behavior when enabling database_insights_mode="advanced" without changing performance insights retention window ([#43919](https://github.com/hashicorp/terraform-provider-aws/issues/43919))
+* resource/aws_rds_cluster: Fixes the behavior when modifying `database_insights_mode` when using custom KMS key ([#43942](https://github.com/hashicorp/terraform-provider-aws/issues/43942))
+
 ## 6.9.0 (August 14, 2025)
 
 
