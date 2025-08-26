@@ -2,7 +2,10 @@
 ## 6.11.0 (Unreleased)
 
 
+FEATURES:
+
 ENHANCEMENTS:
+* resource/aws_dynamodb_contributor_insights: Add `mode` argument in support of [CloudWatch contributor insights modes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/contributorinsights_HowItWorks.html#contributorinsights_HowItWorks.Modes) ([#43914](https://github.com/hashicorp/terraform-provider-aws/issues/43914))
 
 BUG FIXES:
 
