@@ -2,6 +2,12 @@
 ## 6.12.0 (Unreleased)
 
 
+NOTES:
+
+ENHANCEMENTS:
+
+BUG FIXES:
+
 ## 6.11.0 (August 28, 2025)
 
 
