@@ -2,6 +2,11 @@
 ## 6.13.0 (Unreleased)
 
 
+ENHANCEMENTS:
+
+BUG FIXES:
+* resource/aws_rds_cluster_role_association: Make `feature_name` optional ([#44143](https://github.com/hashicorp/terraform-provider-aws/issues/44143))
+
 ## 6.12.0 (September 4, 2025)
 
 
