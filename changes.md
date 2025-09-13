@@ -2,6 +2,10 @@
 ## 6.14.0 (Unreleased)
 
 
+FEATURES:
+
+ENHANCEMENTS:
+
 ## 6.13.0 (September 11, 2025)
 
 
