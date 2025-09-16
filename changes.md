@@ -5,6 +5,7 @@
 FEATURES:
 
 ENHANCEMENTS:
+* resource/aws_rds_global_cluster: Remove provider-side conflict between `source_db_cluster_identifier` and `engine` arguments ([#44252](https://github.com/hashicorp/terraform-provider-aws/issues/44252))
 
 ## 6.13.0 (September 11, 2025)
 
