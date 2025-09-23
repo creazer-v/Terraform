@@ -2,6 +2,13 @@
 ## 6.15.0 (Unreleased)
 
 
+## 6.14.1 (September 22, 2025)
+
+
+NOTES:
+
+BUG FIXES:
+
 ## 6.14.0 (September 18, 2025)
 
 
