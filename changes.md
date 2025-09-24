@@ -2,6 +2,11 @@
 ## 6.15.0 (Unreleased)
 
 
+ENHANCEMENTS:
+
+BUG FIXES:
+* resource/aws_rds_cluster: Fixes error when setting `database_insights_mode` with `global_cluster_identifier`. ([#44404](https://github.com/hashicorp/terraform-provider-aws/issues/44404))
+
 ## 6.14.1 (September 22, 2025)
 
 
