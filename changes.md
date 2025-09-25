@@ -2,6 +2,12 @@
 ## 6.15.0 (Unreleased)
 
 
+FEATURES:
+* **New Data Source:** `aws_odb_db_node` ([#43792](https://github.com/hashicorp/terraform-provider-aws/issues/43792))
+* **New Data Source:** `aws_odb_db_nodes` ([#43792](https://github.com/hashicorp/terraform-provider-aws/issues/43792))
+* **New Data Source:** `aws_odb_db_server` ([#43792](https://github.com/hashicorp/terraform-provider-aws/issues/43792))
+* **New Data Source:** `aws_odb_db_servers` ([#43792](https://github.com/hashicorp/terraform-provider-aws/issues/43792))
+
 ENHANCEMENTS:
 
 BUG FIXES:
