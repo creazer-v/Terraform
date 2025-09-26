@@ -9,6 +9,9 @@ FEATURES:
 * **New Data Source:** `aws_odb_db_servers` ([#43792](https://github.com/hashicorp/terraform-provider-aws/issues/43792))
 
 ENHANCEMENTS:
+* data-source/aws_rds_proxy: Add `default_auth_scheme` attribute ([#44309](https://github.com/hashicorp/terraform-provider-aws/issues/44309))
+* resource/aws_rds_proxy: Add `default_auth_scheme` argument ([#44309](https://github.com/hashicorp/terraform-provider-aws/issues/44309))
+* resource/aws_rds_proxy: Make `auth` configuration block optional ([#44309](https://github.com/hashicorp/terraform-provider-aws/issues/44309))
 
 BUG FIXES:
 * resource/aws_rds_cluster: Fixes error when setting `database_insights_mode` with `global_cluster_identifier`. ([#44404](https://github.com/hashicorp/terraform-provider-aws/issues/44404))
