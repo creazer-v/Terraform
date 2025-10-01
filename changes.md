@@ -7,6 +7,7 @@ FEATURES:
 * **New Data Source:** `aws_odb_db_nodes` ([#43792](https://github.com/hashicorp/terraform-provider-aws/issues/43792))
 * **New Data Source:** `aws_odb_db_server` ([#43792](https://github.com/hashicorp/terraform-provider-aws/issues/43792))
 * **New Data Source:** `aws_odb_db_servers` ([#43792](https://github.com/hashicorp/terraform-provider-aws/issues/43792))
+* **New Data Source:** `aws_odb_db_system_shapes` ([#43825](https://github.com/hashicorp/terraform-provider-aws/issues/43825))
 
 ENHANCEMENTS:
 * data-source/aws_rds_proxy: Add `default_auth_scheme` attribute ([#44309](https://github.com/hashicorp/terraform-provider-aws/issues/44309))
