@@ -4,6 +4,8 @@
 
 FEATURES:
 
+ENHANCEMENTS:
+
 BUG FIXES:
 
 ## 6.15.0 (October 2, 2025)
