@@ -7,6 +7,7 @@ FEATURES:
 ENHANCEMENTS:
 
 BUG FIXES:
+* resource/aws_dynamodb_table: Do not retry on `LimitExceededException` ([#44576](https://github.com/hashicorp/terraform-provider-aws/issues/44576))
 
 ## 6.15.0 (October 2, 2025)
 
