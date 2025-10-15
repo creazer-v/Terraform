@@ -2,6 +2,13 @@
 ## 6.17.0 (Unreleased)
 
 
+NOTES:
+
+FEATURES:
+* **New Data Source:** `aws_rds_global_cluster` ([#37286](https://github.com/hashicorp/terraform-provider-aws/issues/37286))
+
+ENHANCEMENTS:
+
 BUG FIXES:
 
 ## 6.16.0 (October 9, 2025)
