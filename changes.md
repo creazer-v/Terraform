@@ -2,6 +2,10 @@
 ## 6.18.0 (Unreleased)
 
 
+FEATURES:
+
+ENHANCEMENTS:
+
 ## 6.17.0 (October 16, 2025)
 
 
