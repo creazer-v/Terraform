@@ -6,6 +6,9 @@ FEATURES:
 
 ENHANCEMENTS:
 
+BUG FIXES:
+* resource/aws_rds_cluster: Fix "When modifying Provisioned IOPS storage, specify a value for both allocated storage and iops" error when updating RDS clusters with Provisioned IOPS storage ([#44706](https://github.com/hashicorp/terraform-provider-aws/issues/44706))
+
 ## 6.17.0 (October 16, 2025)
 
 
