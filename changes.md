@@ -4,6 +4,8 @@
 
 ENHANCEMENTS:
 
+BUG FIXES:
+
 ## 6.18.0 (October 23, 2025)
 
 
