@@ -2,9 +2,23 @@
 ## 6.21.0 (Unreleased)
 
 
+FEATURES:
+* **New Action:** `aws_dynamodb_create_backup` ([#45001](https://github.com/hashicorp/terraform-provider-aws/issues/45001))
+
 ENHANCEMENTS:
 
 BUG FIXES:
+* resource/aws_redshift_cluster: Prevents errors with empty tag values. ([#44952](https://github.com/hashicorp/terraform-provider-aws/issues/44952))
+* resource/aws_redshift_cluster_snapshot: Prevents errors with empty tag values. ([#44952](https://github.com/hashicorp/terraform-provider-aws/issues/44952))
+* resource/aws_redshift_event_subscription: Prevents errors with empty tag values. ([#44952](https://github.com/hashicorp/terraform-provider-aws/issues/44952))
+* resource/aws_redshift_hsm_client_certificate: Prevents errors with empty tag values. ([#44952](https://github.com/hashicorp/terraform-provider-aws/issues/44952))
+* resource/aws_redshift_hsm_configuration: Prevents errors with empty tag values. ([#44952](https://github.com/hashicorp/terraform-provider-aws/issues/44952))
+* resource/aws_redshift_integration: Prevents errors with empty tag values. ([#44952](https://github.com/hashicorp/terraform-provider-aws/issues/44952))
+* resource/aws_redshift_parameter_group: Prevents errors with empty tag values. ([#44952](https://github.com/hashicorp/terraform-provider-aws/issues/44952))
+* resource/aws_redshift_snapshot_copy_grant: Prevents errors with empty tag values. ([#44952](https://github.com/hashicorp/terraform-provider-aws/issues/44952))
+* resource/aws_redshift_snapshot_schedule: Prevents errors with empty tag values. ([#44952](https://github.com/hashicorp/terraform-provider-aws/issues/44952))
+* resource/aws_redshift_subnet_group: Prevents errors with empty tag values. ([#44952](https://github.com/hashicorp/terraform-provider-aws/issues/44952))
+* resource/aws_redshift_usage_limit: Prevents errors with empty tag values. ([#44952](https://github.com/hashicorp/terraform-provider-aws/issues/44952))
 
 ## 6.20.0 (November 6, 2025)
 
@@ -14,6 +28,17 @@ FEATURES:
 ENHANCEMENTS:
 
 BUG FIXES:
+* resource/aws_redshift_cluster: Prevents errors with empty tag values. ([#44952](https://github.com/hashicorp/terraform-provider-aws/issues/44952))
+* resource/aws_redshift_cluster_snapshot: Prevents errors with empty tag values. ([#44952](https://github.com/hashicorp/terraform-provider-aws/issues/44952))
+* resource/aws_redshift_event_subscription: Prevents errors with empty tag values. ([#44952](https://github.com/hashicorp/terraform-provider-aws/issues/44952))
+* resource/aws_redshift_hsm_client_certificate: Prevents errors with empty tag values. ([#44952](https://github.com/hashicorp/terraform-provider-aws/issues/44952))
+* resource/aws_redshift_hsm_configuration: Prevents errors with empty tag values. ([#44952](https://github.com/hashicorp/terraform-provider-aws/issues/44952))
+* resource/aws_redshift_integration: Prevents errors with empty tag values. ([#44952](https://github.com/hashicorp/terraform-provider-aws/issues/44952))
+* resource/aws_redshift_parameter_group: Prevents errors with empty tag values. ([#44952](https://github.com/hashicorp/terraform-provider-aws/issues/44952))
+* resource/aws_redshift_snapshot_copy_grant: Prevents errors with empty tag values. ([#44952](https://github.com/hashicorp/terraform-provider-aws/issues/44952))
+* resource/aws_redshift_snapshot_schedule: Prevents errors with empty tag values. ([#44952](https://github.com/hashicorp/terraform-provider-aws/issues/44952))
+* resource/aws_redshift_subnet_group: Prevents errors with empty tag values. ([#44952](https://github.com/hashicorp/terraform-provider-aws/issues/44952))
+* resource/aws_redshift_usage_limit: Prevents errors with empty tag values. ([#44952](https://github.com/hashicorp/terraform-provider-aws/issues/44952))
 
 ## 6.19.0 (October 30, 2025)
 
