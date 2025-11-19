@@ -5,8 +5,10 @@
 FEATURES:
 
 ENHANCEMENTS:
+* resource/aws_dynamodb_table: Add `global_table_witness` argument ([#43908](https://github.com/hashicorp/terraform-provider-aws/issues/43908))
 
 BUG FIXES:
+* resource/aws_db_instance: Fix blue/green deployments failing with "not in available state" by improving stability and handling `storage-config-upgrade` and `storage-initialization` statuses ([#41275](https://github.com/hashicorp/terraform-provider-aws/issues/41275))
 
 ## 6.21.0 (November 13, 2025)
 
