@@ -2,13 +2,19 @@
 ## 6.22.0 (Unreleased)
 
 
+NOTES:
+
 FEATURES:
 
 ENHANCEMENTS:
+* resource/aws_bedrockagent_knowledge_base: Add `storage_configuration.rds_configuration.field_mapping.custom_metadata_field` argument ([#45075](https://github.com/hashicorp/terraform-provider-aws/issues/45075))
 * resource/aws_dynamodb_table: Add `global_table_witness` argument ([#43908](https://github.com/hashicorp/terraform-provider-aws/issues/43908))
+* resource/aws_timestreaminfluxdb_db_cluster: Add `engine_type` attribute ([#44899](https://github.com/hashicorp/terraform-provider-aws/issues/44899))
+* resource/aws_timestreaminfluxdb_db_cluster: Add validation to ensure InfluxDB V2 clusters have required fields and InfluxDB V3 clusters (when using V3 parameter groups) do not have forbidden V2 fields. This functionality requires the `timestream-influxdb:GetDbParameterGroup` IAM permission ([#44899](https://github.com/hashicorp/terraform-provider-aws/issues/44899))
 
 BUG FIXES:
 * resource/aws_db_instance: Fix blue/green deployments failing with "not in available state" by improving stability and handling `storage-config-upgrade` and `storage-initialization` statuses ([#41275](https://github.com/hashicorp/terraform-provider-aws/issues/41275))
+* resource/aws_timestreaminfluxdb_db_cluster: Make `allocated_storage`, `bucket`, `organization`, `username`, and `password` optional to support InfluxDB V3 clusters ([#44899](https://github.com/hashicorp/terraform-provider-aws/issues/44899))
 
 ## 6.21.0 (November 13, 2025)
 
